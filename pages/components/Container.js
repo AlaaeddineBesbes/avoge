@@ -72,7 +72,7 @@ useEffect(() => {
         <div className=" bg-gradient-to-r from-gray-100 to-gray-50 h-full " >
             <div className="  px-8 py-1 ">
                 <p className="text-gray-500 text-lg">
-                Fren finance
+                Token : 
             </p>
                 
             </div>
