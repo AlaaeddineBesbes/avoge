@@ -18,16 +18,16 @@ const Card = (props) => {
 
 
     return (
-        <div className={`transform hover:scale-110 cursor-pointer transition delay-100 w-3/12  p-2 py-4 shadow-xl  border rounded-xl bg-gradient-to-r ${Color[props.icon]}`} >
+        <div  className={`transform hover:scale-110 cursor-pointer transition delay-100 w-3/12  p-2 py-4 shadow-xl  border rounded-xl bg-gradient-to-r ${Color[props.icon]}`} >
             <div className="flex justify-between">
                 <div></div>
                 <div className=" w-10  h-10 flex items-center justify-center  bg-gray-300 rounded-xl m-1  bg-opacity-30">
                     {arrayIcon[props.icon]}
                 </div>
             </div>
-            <p className="text-gray-200 text-xs  ">
+            <a className="text-gray-200 text-lg  " href='http://www.google.com'>
                 {props.title}
-            </p>
+            </a>
             <p className="text-gray-50 text-lg  font-semibold  ">
                 {props.balance} EGLD
             </p>
