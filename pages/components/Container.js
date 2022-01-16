@@ -28,19 +28,17 @@ const tokenContract = new Web3Client.eth.Contract(minABI, tokenAddress);
 /*********************/
 useEffect(() => {
     async function fetchMyAPI() {
-        console.log("1")
         if (isAuthenticated) {
-            console.log("2")
             setWalletAddress(user.attributes.ethAddress);
-            console.log(user.attributes.ethAddress)
-            console.log(walletAddress)
             let walletB = await tokenContract.methods.balanceOf(user.attributes.ethAddress).call();
             let walletBalance = Web3Client.utils.fromWei(walletB);
-            console.log(walletBalance)
+            
         setBalance(walletBalance);
 
         let totalSupply = tokenContract.methods.totalSupply();
         setTotalSupply(totalSupply.toString());
+        console.log(totalSupply)
+
           }
         
         
@@ -62,12 +60,7 @@ useEffect(() => {
     fetchMyAPI()
   }, [isAuthenticated])
 
-/*********************** */
 
-
-    
-        
-  
     return (
         <div className=" bg-gradient-to-r from-gray-100 to-gray-50 h-full " >
             <div className="  px-8 py-1 ">
@@ -78,9 +71,9 @@ useEffect(() => {
             </div>
             <div className="flex   p-4 space-x-3">
                 <Card title="BALANCE" balance={walletBalance} icon={0} />
-                <Card title="MARKETING WALLET" balance={marketingBalance} icon={1} />
-                <Card title="BUY-BACK WALLET" balance={buyBackBalance} icon={2} />
-                <Card title="TOTAL SUUPLY" balance={totalSupply} icon={3} />
+                <Card title="MARKETING WALLET" balance={marketingBalance} link='http://www.google.com' icon={1} />
+                <Card title="BUY-BACK WALLET" balance={buyBackBalance} link='http://www.google.com' icon={2} />
+                <Card title="TOTAL SUUPLY" balance={totalSupply}  icon={3} />
 
             </div>
             <div className=" ">

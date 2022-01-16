@@ -25,11 +25,11 @@ const Card = (props) => {
                     {arrayIcon[props.icon]}
                 </div>
             </div>
-            <a className="text-gray-200 text-lg  " href='http://www.google.com'>
+            <a className="text-gray-200 text-lg " href={props.link}>
                 {props.title}
             </a>
             <p className="text-gray-50 text-lg  font-semibold  ">
-                {props.balance} EGLD
+                {props.balance} 
             </p>
 
         </div>
