@@ -18,7 +18,7 @@ const Header = () => {
         return(
             <div className="flex shadow-sm  p-4 justify-between  ">
                 <div className="flex space-x-3  ">
-                    <p className="text-gray-400">Adress </p>
+                    <p className="text-gray-400">Address </p>
                     <p></p>
                     <CropLandscapeIcon className="text-gray-300" />
                     <DashboardIcon className="text-gray-300" />
