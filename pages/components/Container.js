@@ -24,6 +24,19 @@ const marketingAddress="0x5b12F750C45c886F1a9a96d4aC452C752bc0c434";
 const tokenContract = new Web3Client.eth.Contract(minABI, tokenAddress);
 
 
+var markbalance = Web3Client.eth.getBalance(marketingAddress, function   (error, wei) {
+    if (!error) {
+        setMarketing(Web3Client.utils.fromWei(wei, 'ether'))
+        
+    }
+  });
+
+  var buybbalance = Web3Client.eth.getBalance(buyBackAddress, function   (error, wei) {
+    if (!error) {
+        setBuyBack(Web3Client.utils.fromWei(wei, 'ether'))
+        
+    }
+  });
 
 /*********************/
 useEffect(() => {
@@ -34,7 +47,7 @@ useEffect(() => {
             let walletBalance = Web3Client.utils.fromWei(walletB);
             
         setBalance(walletBalance);
-
+        
         let totalSupply = tokenContract.methods.totalSupply();
         setTotalSupply(totalSupply.toString());
         console.log(totalSupply)
@@ -47,7 +60,9 @@ useEffect(() => {
 /*
         let marketingB = await bnbContract.methods.balanceOf(marketingAddress).call();
         let marketingBalance = Web3Client.utils.fromWei(marketingB);
-        setMarketing(marketingBalance)
+        marketingBalance)
+        
+     
 
         let buyBackB = await bnbContract.methods.balanceOf(buyBackAddress).call();
         let buyBackBalance = Web3Client.utils.fromWei(buyBackB);
