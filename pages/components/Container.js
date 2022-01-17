@@ -50,7 +50,7 @@ useEffect(() => {
         
         let totalSupply = tokenContract.methods.totalSupply();
         setTotalSupply(totalSupply.toString());
-        console.log(totalSupply)
+        
 
           }
         
@@ -80,7 +80,7 @@ useEffect(() => {
         <div className=" bg-gradient-to-r from-gray-100 to-gray-50 h-full " >
             <div className="  px-8 py-1 ">
                 <p className="text-gray-500 text-lg">
-                Token : 
+                Token : Fren Finance
             </p>
                 
             </div>
@@ -88,7 +88,7 @@ useEffect(() => {
                 <Card title="BALANCE" balance={walletBalance} icon={0} />
                 <Card title="MARKETING WALLET" balance={marketingBalance} link='http://www.google.com' icon={1} />
                 <Card title="BUY-BACK WALLET" balance={buyBackBalance} link='http://www.google.com' icon={2} />
-                <Card title="TOTAL SUUPLY" balance={totalSupply}  icon={3} />
+                <Card title="TOTAL SUPPLY" balance={"10 000 000"}  icon={3} />
 
             </div>
             <div className=" ">
