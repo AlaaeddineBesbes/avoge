@@ -1,4 +1,4 @@
-import Head from 'next/head'
+
 import Header from "./components/Header"
 import Container from './components/Container'
 import React, {useState, useEffect} from 'react';
