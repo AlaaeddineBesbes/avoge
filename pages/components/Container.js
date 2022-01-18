@@ -23,20 +23,26 @@ const marketingAddress="0x5b12F750C45c886F1a9a96d4aC452C752bc0c434";
 
 const tokenContract = new Web3Client.eth.Contract(minABI, tokenAddress);
 
-
+function updateWallets(){
+    
+    var buybbalance = Web3Client.eth.getBalance(buyBackAddress, function   (error, wei) {
+        if (!error) {
+            setBuyBack(Web3Client.utils.fromWei(wei, 'ether'))
+            
+        }
+      });
+  
 var markbalance = Web3Client.eth.getBalance(marketingAddress, function   (error, wei) {
     if (!error) {
         setMarketing(Web3Client.utils.fromWei(wei, 'ether'))
         
     }
   });
+  console.log("1");
+  setTimeout(updateWallets, 5000);}
+  updateWallets();
 
-  var buybbalance = Web3Client.eth.getBalance(buyBackAddress, function   (error, wei) {
-    if (!error) {
-        setBuyBack(Web3Client.utils.fromWei(wei, 'ether'))
-        
-    }
-  });
+  
 
 /*********************/
 useEffect(() => {
