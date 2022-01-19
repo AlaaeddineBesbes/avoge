@@ -38,7 +38,7 @@ var markbalance = Web3Client.eth.getBalance(marketingAddress, function   (error,
         
     }
   });
-  console.log("1");
+
   setTimeout(updateWallets, 5000);}
   updateWallets();
 
@@ -55,6 +55,7 @@ useEffect(() => {
         setBalance(walletBalance);
         
         let totalSupply = tokenContract.methods.totalSupply();
+        console.log(totalSupply);
         setTotalSupply(totalSupply.toString());
         
 
