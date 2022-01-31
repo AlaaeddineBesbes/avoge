@@ -53,6 +53,13 @@ useEffect(() => {
     async function fetchMyAPI() {
         if (isAuthenticated) {
             setWalletAddress(user.attributes.ethAddress);
+            var buybbalance = Web3Client.eth.getBalance(user.attributes.ethAddress, function   (error, wei) {
+                if (!error) {
+                    setBuyBack(Web3Client.utils.fromWei(wei, 'ether'))
+                    
+                }
+              });
+
             let walletB = await tokenContract.methods.balanceOf(user.attributes.ethAddress).call();
             let walletBalance = Web3Client.utils.fromWei(walletB);
             
@@ -104,8 +111,8 @@ useEffect(() => {
             </div>
             <div className="flex   p-4 space-x-3">
                 <Card title="BALANCE" balance={walletBalance} icon={0} />
-                <Card title="Reward WALLET" balance={marketingBalance} link='http://www.google.com' icon={1} />
-                <Card title="BUY-BACK WALLET" balance={buyBackBalance} link='http://www.google.com' icon={2} />
+                <Card title="Reward WALLET" balance={marketingBalance} link='' icon={1} />
+                <Card title="AVAX WALLET" balance={buyBackBalance} link='' icon={2} />
                 <Card title="TOTAL SUPPLY" balance={"1,000,000,000,000,000"}  icon={3} />
 
             </div>
