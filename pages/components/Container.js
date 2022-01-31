@@ -29,12 +29,12 @@ const rewardTokenContract = new Web3Client.eth.Contract(minABIreward,rewardToken
 
 function updateWallets(){
     
-    var buybbalance = Web3Client.eth.getBalance(buyBackAddress, function   (error, wei) {
-        if (!error) {
-            setBuyBack(Web3Client.utils.fromWei(wei, 'ether'))
+    // var buybbalance = Web3Client.eth.getBalance(buyBackAddress, function   (error, wei) {
+    //     if (!error) {
+    //         setBuyBack(Web3Client.utils.fromWei(wei, 'ether'))
             
-        }
-      });
+    //     }
+    //   });
   
 // var markbalance = Web3Client.eth.getBalance(marketingAddress, function   (error, wei) {
 //     if (!error) {
@@ -55,7 +55,8 @@ useEffect(() => {
             setWalletAddress(user.attributes.ethAddress);
             var buybbalance = Web3Client.eth.getBalance(user.attributes.ethAddress, function   (error, wei) {
                 if (!error) {
-                    setBuyBack(Web3Client.utils.fromWei(wei, 'ether'))
+                    setBuyBack(Web3Client.utils.fromWei(wei, 'ether'));
+                    console.log(buyBackBalance);
                     
                 }
               });
