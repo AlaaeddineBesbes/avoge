@@ -25,7 +25,7 @@ const Header = () => {
     
                 </div>
                 <div className="flex ">
-                <Button variant="contained" size="large" onClick={() => authenticate()}
+                <Button id='connect' variant="contained" size="large"  onClick={() => authenticate()}
    >Connect Your Wallet</Button>                </div>
             </div>)
     }
@@ -48,7 +48,7 @@ const Header = () => {
     
                 </div>
                 <div className="flex ">
-                <Button variant="contained" size="large" onClick={() => logout()}
+                <Button id='disconnect' variant="contained" size="large" onClick={() => logout()}
    >Disconnect Your Wallet</Button>                </div>
             </div>)
     }

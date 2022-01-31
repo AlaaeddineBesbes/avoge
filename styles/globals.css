@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#connect{
+  background-color: green;
+  color: white;
+}
+
+#disconnect{
+  background-color: red;
+  color: white;
+}

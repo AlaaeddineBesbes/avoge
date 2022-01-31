@@ -31,7 +31,7 @@ const data = {
 const Middle = () => {
     return (
         <div className=" bg-white ml-2   shadow-sm mr-4 w-100 p-3 border rounded-xl border-gray-100">
-            <iframe src="https://dexscreener.com/ethereum/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640" width="100%" height="500px"></iframe>
+            <iframe src="https://dexscreener.com/avalanche/0xae6ce0ebf0a0104f3d6db74dd7da89f50f1b6082" width="100%" height="500px"></iframe>
         </div>
     )
 }
