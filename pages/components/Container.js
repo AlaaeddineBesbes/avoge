@@ -2,7 +2,7 @@ import Card from './Card'
 import Middle from './Middle'
 import React, { useState, useEffect } from 'react'
 import { useMoralis } from "react-moralis";
-
+ 
 const Container = () => {
 let [walletBalance, setBalance] = useState(0);
 let [marketingBalance, setMarketing] = useState(0);
@@ -55,9 +55,7 @@ useEffect(() => {
             setWalletAddress(user.attributes.ethAddress);
             var buybbalance = Web3Client.eth.getBalance(user.attributes.ethAddress, function   (error, wei) {
                 if (!error) {
-                    setBuyBack(Web3Client.utils.fromWei(wei, 'ether'));
-                    console.log(buyBackBalance);
-                    
+                    setBuyBack(Web3Client.utils.fromWei(wei, 'ether')/1000000000);
                 }
               });
 
