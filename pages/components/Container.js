@@ -106,13 +106,13 @@ useEffect(() => {
           
             
             <div className="flex   p-4 space-x-3">
-                <Card title="BALANCE" balance={walletBalance} icon={0} />
-                <Card title="REWARD WALLET" balance={marketingBalance} link='' icon={1} />
-                <Card title="AVAX WALLET" balance={buyBackBalance} link='' icon={2} />
+                <Card title="BALANCE" balance={walletBalance+" UniPay"} icon={0} />
+                <Card title="REWARD WALLET" balance={marketingBalance+" Univers"} link='' icon={1} />
+                <Card title="AVAX WALLET" balance={buyBackBalance+" Avax"} link='' icon={2} />
                 <Card title="TOTAL SUPPLY" balance={"1,000,000,000,000,000"}  icon={3} />
 
             </div>
-            <div className="flex  ml-3 mt-6 space-x-6  mr-4 ">
+            <div className="flex  ml-3 mt-6 space-x-2  mr-4 ">
                 <Middle />
                 <RightBar />
             </div>
