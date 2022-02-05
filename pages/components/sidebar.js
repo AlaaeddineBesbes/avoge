@@ -67,7 +67,7 @@ const Sidebar = () => {
                     <div className="">
                         <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                              <SocialIcon network="discord" style={{ height: 35, width: 35 }} />
-                            <a href='https://discord.gg/MGeFBNdf' className=" font-semibold " >Website</a>
+                            <a href='https://discord.gg/MGeFBNdf' className=" font-semibold " >Discord</a>
                         </div>
                     </div>
 
