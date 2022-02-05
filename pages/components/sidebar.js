@@ -32,7 +32,7 @@ const Sidebar = () => {
                     <div className="">
                         <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                             <ClearAllIcon className="text-gray-300" />
-                            <p className=" font-semibold  " >Dextools</p>
+                            <a href='https://dexscreener.com/avalanche/0xae6ce0ebf0a0104f3d6db74dd7da89f50f1b6082' className=" font-semibold  " >Dextools</a>
                         </div>
                     </div>
                     <div className="">
