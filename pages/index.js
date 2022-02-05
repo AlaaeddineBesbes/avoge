@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex w-full h-full  " >
+      <div className="flex w-full h-screen  " >
       <Sidebar />
         <div className="w-screen h-screen " id="middle">
           <Header />
