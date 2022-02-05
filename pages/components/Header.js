@@ -48,7 +48,7 @@ const Header = () => {
     
                 </div>
                 <div className="flex ">
-                <Button id='disconnect' variant="contained" size="large" onClick={() => logout()}
+                <Button id='disconnect' className='bg-blue' size="large" onClick={() => logout()}
    >Disconnect Your Wallet</Button>                </div>
             </div>)
     }
