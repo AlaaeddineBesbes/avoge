@@ -18,10 +18,10 @@ const Header = () => {
         return(
             <div className="flex shadow-sm  p-4 justify-between  ">
                 <div className="flex space-x-3  ">
-                    <p className="text-gray-400">Address </p>
+                    <p className="text-blue-500 text-lg font-semibold">Wallet Address  : </p>
                     <p></p>
                     <CropLandscapeIcon className="text-gray-300" />
-                    <DashboardIcon className="text-gray-300" />
+                   
     
                 </div>
                 <div className="flex ">
@@ -41,10 +41,10 @@ const Header = () => {
         return(
             <div className="flex shadow-sm  p-4 justify-between  ">
                 <div className="flex space-x-3  ">
-                    <p className="text-gray-400">Address </p>
-                    <p>{address}</p>
+                    <p className="text-blue-500 text-lg font-semibold"> Wallet Address : {address} </p>
+                    
                     <CropLandscapeIcon className="text-gray-300" />
-                    <DashboardIcon className="text-gray-300" />
+                    
     
                 </div>
                 <div className="flex ">
