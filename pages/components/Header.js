@@ -1,12 +1,6 @@
-
-import DashboardIcon from '@material-ui/icons/Dashboard';
 import CropLandscapeIcon from '@material-ui/icons/CropLandscape';
 import Button from '@material-ui/core/Button'
 import { useMoralis } from "react-moralis";
-import AppsIcon from '@material-ui/icons/Apps';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import { CastConnected } from '@material-ui/icons';
-import { useWeb3 } from '@3rdweb/hooks';
 import React, { useState, useEffect } from 'react'
 
 
@@ -48,7 +42,7 @@ const Header = () => {
     
                 </div>
                 <div className="flex ">
-                <Button id='disconnect' className='bg-blue' size="large" onClick={() => logout()}
+                <Button id='disconnect'  size="large" onClick={() => logout()}
    >Disconnect Your Wallet</Button>                </div>
             </div>)
     }

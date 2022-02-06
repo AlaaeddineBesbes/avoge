@@ -29,5 +29,8 @@
     "tailwindcss": "^2.0.2",
     "web3": "^1.6.1",
     "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.3.0"
   }
 }
