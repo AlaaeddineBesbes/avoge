@@ -23,8 +23,8 @@ const data = {
 
 const RightBar = () => {
     return (
-        <div className=" bg-white w-4/12 rounded-xl border border-black-0">
-            <div className=" bg-white  ml-2   shadow-sm w-full h-screen   ">
+        <div className="  w-4/12 rounded-xl border border-black-0">
+            <div className="   ml-2   shadow-sm w-full h-screen   ">
             <iframe className='w-full h-full' height="1000px"   src='https://flooz.trade/buzz'></iframe>
         
         </div>
