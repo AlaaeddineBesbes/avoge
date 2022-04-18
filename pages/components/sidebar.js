@@ -26,7 +26,7 @@ const Sidebar = () => {
                     <div className="">
                         <div className="flex p-3 text-white  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                             <DonutLargeIcon className=" text-gray-300" />
-                            <p className="font-semibold "  >Dashbord</p>
+                            <p className="font-semibold "  >Dashboard</p>
                         </div>
                     </div>
                     <div className="">
@@ -38,13 +38,13 @@ const Sidebar = () => {
                     <div className="">
                         <div className="flex p-3 text-white  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                             <ArrowUpwardIcon className="text-gray-300" />
-                            <p href ='https://traderjoexyz.com/trade?outputCurrency=0x779595f212b53e4f1f51b0875405bf21b5e4d805#/' className=" font-semibold  " >Trader Joe</p>
+                            <a href ='https://traderjoexyz.com/trade?outputCurrency=0x779595f212b53e4f1f51b0875405bf21b5e4d805#/' className=" font-semibold  " >Trader Joe</a>
                         </div>
                     </div>
                     <div className="">
                         <div className="flex p-3 text-white  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                             <ArrowDownwardIcon className="text-gray-300" />
-                            <p href ='https://dx.app/app/v3_3/dxlockview?id=0&add=0xEEBCACe14C6713D59723604194ac139A2C1aA46b&type=lplock&chain=Avalanche'className="font-semibold " >Lock</p>
+                            <a href ='https://dx.app/app/v3_3/dxlockview?id=0&add=0xEEBCACe14C6713D59723604194ac139A2C1aA46b&type=lplock&chain=Avalanche'className="font-semibold " >Lock</a>
                         </div>
                     </div>
                    
