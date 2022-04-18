@@ -15,7 +15,7 @@ const Sidebar = () => {
     return (
         <div className="md:w-3/12 w-5/12 h-full shadow-md">
             <div className=" border-b py-3 mt-1 flex justify-around ">
-                <p className="text-xl  font-semibold">UNIPAY</p>
+                <p className="text-xl  font-semibold">AVOGE</p>
                 <p>|</p>
                 
 
@@ -32,19 +32,19 @@ const Sidebar = () => {
                     <div className="">
                         <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                             <ClearAllIcon className="text-gray-300" />
-                            <a href='https://dexscreener.com/avalanche/0xae6ce0ebf0a0104f3d6db74dd7da89f50f1b6082' className=" font-semibold  " >Dextools</a>
+                            <a href='https://dexscreener.com/avalanche/0xeebcace14c6713d59723604194ac139a2c1aa46b' className=" font-semibold  " >Dexscreen</a>
                         </div>
                     </div>
                     <div className="">
                         <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                             <ArrowUpwardIcon className="text-gray-300" />
-                            <p className=" font-semibold  " >Trader Joe</p>
+                            <p href ='https://traderjoexyz.com/trade?outputCurrency=0x779595f212b53e4f1f51b0875405bf21b5e4d805#/' className=" font-semibold  " >Trader Joe</p>
                         </div>
                     </div>
                     <div className="">
                         <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                             <ArrowDownwardIcon className="text-gray-300" />
-                            <p className="font-semibold " >Lock</p>
+                            <p href ='https://dx.app/app/v3_3/dxlockview?id=0&add=0xEEBCACe14C6713D59723604194ac139A2C1aA46b&type=lplock&chain=Avalanche'className="font-semibold " >Lock</p>
                         </div>
                     </div>
                    
@@ -54,27 +54,27 @@ const Sidebar = () => {
                     <div className="">
                         <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                             <SocialIcon network="twitter" style={{ height: 35, width: 35 }} />
-                            <a className=" font-semibold " href='https://twitter.com/UniPayAVAX'>Twitter</a>
+                            <a className=" font-semibold " href='https://twitter.com/AvogeAVAX'>Twitter</a>
                         </div>
                     </div>
                     <div className="">
                         <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                             <SocialIcon network="telegram" style={{ height: 35, width: 35 }} />
-                            <a className=" font-semibold "  href='https://t.me/UniPayAVAX'>Telegram</a>
+                            <a className=" font-semibold "  href='https://t.me/avogeAVAXPortal'>Telegram</a>
                         </div>
                     </div>
 
                     <div className="">
                         <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                              <SocialIcon network="discord" style={{ height: 35, width: 35 }} />
-                            <a href='https://discord.gg/MGeFBNdf' className=" font-semibold " >Discord</a>
+                            <a href='https://discord.com/invite/mEnzsPZj' className=" font-semibold " >Discord</a>
                         </div>
                     </div>
 
                     <div className="">
                         <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
                              <SocialIcon  style={{ height: 35, width: 35 }} />
-                            <a href='https://unipay.space/' className=" font-semibold " >Website</a>
+                            <a href='https://www.youtube.com/channel/UC-Q-0i_BZqSHL-Stp8nFg5A' className=" font-semibold " >Youtube</a>
                         </div>
                     </div>
 
